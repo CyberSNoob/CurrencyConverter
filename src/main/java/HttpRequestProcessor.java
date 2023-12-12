@@ -49,7 +49,7 @@ public class HttpRequestProcessor {
     }
 
     public static void testGetJsonObject(){
-        double val = FileHandler.readJsonFile("test.json")
+        double val = FileHandler.readJsonFile("EUR_to_CADUSD_data.json")
                 .getAsJsonObject("data")
                 .getAsJsonObject("USD")
                 .get("value").getAsDouble();

@@ -11,7 +11,7 @@ public class FileHandlerTests {
 
     @Test
     public void testPathExists() {
-        String fileName = "currency.txt";
+        String fileName = "currency_list.txt";
         Path path = Paths.get(resourcePath, fileName);
         Assertions.assertTrue(Files.exists(path));
     }
